@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de mascotas</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./funciones.js"></script>
+
+</head>
+
+<body>
+    <header>
+    
+        <div class="header-container"> 
+            <h1> Datos</h1>
+            <a href="index.html">Inicio</a>
+        </div>
+
+    </header>
+    
+    <form id="datos">
+        <span>Nombre</span>
+        <input type="text" id="nombre" name="Nombre" ><br><br>
+        <span>Edad</span>
+        <input type="number" id="Edad" name="Edad"   min="18" max="110"><br><br>
+
+
+        <span>Vivienda</span>
+        <select id="viviendas">
+            <option value="casa rural">Casa Rural</option>
+            <option value="casa urbana">Casa Urbana</option>
+            <option value="departamento">departamento</option>
+        </select><br>
+
+
+        <P> Seleccione que compañero desea adoptar </P>
+        <span>perro</span>
+        <input type="checkbox" id="perro">
+        <span>gato</span>
+        <input type="checkbox" id="gato">
+        <span>pajaro</span>
+        <input type="checkbox" id="pajaro">
+        <span>pez</span>
+        <input type="checkbox" id="pez">
+        <span>tortuga</span>
+        <input type="checkbox" id="tortuga">
+    </form><br>
+
+    <button type="button" onclick="enviar()">Enviar</button>
+    <button type="button" onclick="borrar()">Borrar</button>
+
+</body>
+</html>
